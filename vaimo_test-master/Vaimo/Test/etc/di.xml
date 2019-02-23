@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference type="Vaimo\Test\Helper\ClientResponse" for="Vaimo\Test\Api\RequestProtocolInterface"/>
+    <type name="Magento\CatalogInventory\Model\Quote\Item\QuantityValidator">
+        <plugin name="VALIDATE_STOCK" type="Vaimo\Test\Plugin\ValidateInStock" sortOrder="10" disabled="false"  />
+    </type>
+</config>
